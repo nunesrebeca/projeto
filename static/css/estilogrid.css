@@ -1,0 +1,119 @@
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns:12fr;
+    grid-template-rows: 10vh calc(100vh - 20vh) 10vh;
+    grid-template-areas: "h" "c" "f"
+}
+
+header{
+    grid-area: h;
+    background-color:aqua;
+    display: flex;
+    gap: 10vw;
+}
+
+.container{
+    grid-area: c;
+    background-color:beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+footer{
+    grid-area: f;
+    background-color:bisque;
+}
+
+table, thead, tbody{
+    width: 80%;
+}
+
+tr,li{
+    width: 100vw;
+    min-height:6vh;
+    background-color: rgb(135, 27, 168);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+th,td{
+    min-width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.btn{
+    text-decoration:none;
+    background-color: rgb(182, 11, 244);
+    color: white;
+    padding: 2px;
+    margin: 2px;
+}
+
+.btn:hover{
+    text-decoration:none;
+    background-color: rgb(182, 11, 244);
+    color: white;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.btnv{
+    text-decoration:none;
+    background-color: rgb(250, 41, 4);
+    color: white;
+    padding: 2px;
+    margin: 2px;
+}
+
+.btnv:hover{
+    text-decoration:none;
+    background-color: rgb(254, 34, 5);
+    color: white;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+ul{ 
+    list-style: none;
+}
+
+form{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+form>p{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 20vw;
+    height: 10vh;
+}
+
+.btnacesso{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
